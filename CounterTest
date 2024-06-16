@@ -1,0 +1,45 @@
+//class header for public class CounterTest inherited from object class 
+public class CounterTest extends Object 
+//start class body 
+{ 
+    //method def. for public method main() returning no value and accepting no arguments  
+    public static void main(String[]args)
+    //start method body
+    {
+        //declare a Counter reference variable 
+        Counter c;
+        // instantiate Counter object using the new variable (c), initialize it using the 
+        // constructor, assign the address to the c reference variable
+        c = new Counter (); 
+        //invoking countandoutput method of c object and passing in string "2" 
+        // (sending a message to the c object to perform the service "countandOutput" and providing data "2")
+        c.countandOutput(2); 
+        c.countandOutput(2);
+    //end method body
+    }
+//end class body
+}
+// class header for Counter which is inherited from the object class 
+class Counter extends Object
+//start class body
+{ 
+    // declare private number reference variable to 40 - it wont be accessible outside of
+    //the class,  instantiate a int object using the newkeyword, initialize it using
+    //the constructor,and assign its address to the number reference variable 
+    private int number = 40; 
+    // method header 
+    // public method def. that returns no value and accepts integer as a parameter 
+    // - it will be callable outside of the class 
+    // variable declaration (int) and name which is number to add 
+    public void countandOutput(int numberToAdd) 
+    //start method body 
+    {
+        //declaring that number is equal is the number variable (40) in addition to the number
+        // to add which is defined in the method header
+        number = number + numberToAdd; 
+        //output number onto screen 
+        System.out.println(number);
+    //end method body
+    }
+//end class body
+} 
